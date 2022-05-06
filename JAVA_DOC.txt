@@ -1,0 +1,9 @@
+Lancer une commande shell à partir d'un fichier Java:
+
+	Runtime runtime = Runtime.getRuntime();
+        String commande = "echo ";
+        String text = "Merci je vais bien";
+        String operator =">>";
+        String redirect_file = "toto.txt";
+        String[] rte = { "/bin/sh", "-c", commande+text+operator+redirect_file };
+        runtime.exec(rte);
