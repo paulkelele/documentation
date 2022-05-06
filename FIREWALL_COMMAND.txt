@@ -6,5 +6,15 @@ Voir le status:
 Ajouter une regle (Ex: port 22 pour le ssh):
 	'sudo ufw allow ssh'
 
-Ouvrir un port specifique (Ex: port 5000 en tcp):
+Ajouter une regle ouverture d'un port specifique (Ex: port 5000 en tcp):
 	'sudo ufw allow 5000/tcp'
+
+Ajouter une regle pour une adresse ip specifique (Ex: que pour l'adresse IP 192.168.1.2):
+	'sudo ufw allow from 192.168.1.2 to any port ssh'
+
+Ajouter une regle pour un intervale d'adresses IP (Ex: que pour l'adresse IP 192.168.1.2/24):
+	'sudo ufw allow from 192.168.1.2/24 to any port ssh'
+
+Supprimer une regle (Ex: port 22 pour le ssh):
+	'sudo ufw delete allow ssh'
+
