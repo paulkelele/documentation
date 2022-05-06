@@ -7,3 +7,20 @@ Lancer une commande shell à partir d'un fichier Java:
         String redirect_file = "toto.txt";
         String[] rte = { "/bin/sh", "-c", commande+text+operator+redirect_file };
         runtime.exec(rte);
+
+
+Créer un mini logger sous Linux avec date:
+
+	private void myLogger(String text) throws Exception{
+	Date date = new Date();
+	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
+	String formatedDate = dateFormat.format(date);  
+	Runtime runtime = Runtime.getRuntime();
+        String commande = "echo ";
+        String Formatedtext = formatedDate+" == "+text;  
+        String operator =">>";
+        String path_log_file = "~/LOGS/logger.txt";
+        String[] d = { "/bin/sh", "-c", commande+Formatedtext+operator+path_log_file};
+        runtime.exec(d);
+	}
+
