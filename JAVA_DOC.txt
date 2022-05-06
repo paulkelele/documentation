@@ -11,13 +11,13 @@ Lancer une commande shell à partir d'un fichier Java:
 
 Créer un mini logger sous Linux avec date:
 
-	private void myLogger(String text) throws Exception{
+	private void myLogger(Object obj) throws Exception{
 	Date date = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
 	String formatedDate = dateFormat.format(date);  
 	Runtime runtime = Runtime.getRuntime();
         String commande = "echo ";
-        String Formatedtext = formatedDate+" == "+text;  
+        String Formatedtext = formatedDate+" == "+obj.toString();  
         String operator =">>";
         String path_log_file = "~/LOGS/logger.txt";
         String[] d = { "/bin/sh", "-c", commande+Formatedtext+operator+path_log_file};
