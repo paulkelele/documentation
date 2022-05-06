@@ -1,3 +1,21 @@
+Inserer text niveau du curseur:
+	'i'
+
+Inserer text apres curseur:
+	'a'
+
+Inserer text debut de ligne:
+	'I'
+
+Inserer text fin de ligne:
+	'A'
+
+Inserer text sur une nouvelle ligne en dessous:
+	'o'
+
+Inserer text sur une nouvelle ligne au dessus:
+	'O'
+
 Aller en haut du fichier:
 	'gg' pour se placer en haut du fichier
 
@@ -13,8 +31,17 @@ Supprimer une ligne:
 Supprimer jusqu'a la fin de la ligne:
 	'd$' a partir du curseur
 
-Supprimer depuis le debut de la ligne
+Supprimer depuis le debut de la ligne:
 	'd0' a partir du curseur
+
+Annuler derniere operation:
+	'u'
+
+Reculer par mot:
+	'b'
+
+Avancer par mot:
+	'w'
 
 Copier une ligne:
 	'yy' sur la ligne que l'on souhaite copiée.
