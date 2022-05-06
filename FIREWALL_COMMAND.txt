@@ -2,3 +2,9 @@ Commande de base pour la gestion du firewall sous ubuntu
 
 Voir le status:
 	'sudo ufw status verbose'
+
+Ajouter une regle (Ex: port 22 pour le ssh):
+	'sudo ufw allow ssh'
+
+Ouvrir un port specifique (Ex: port 5000 en tcp):
+	'sudo ufw allow 5000/tcp'
