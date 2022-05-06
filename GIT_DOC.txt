@@ -1,0 +1,11 @@
+Modifier le dernier message de commit si commit PAS encore pusher sur Remote
+	git commit --amend 
+	git commit --amend -m "Nouveau message"
+
+Modifier le dernier message de commit si commit DEJA pusher sur Remote
+	git commit --amend 
+	git commit --amend -m "Nouveau message"
+	git push --force <remoteName> <branchName>
+	
+
+
