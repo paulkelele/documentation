@@ -1,0 +1,4 @@
+Commande de base pour la gestion du firewall sous ubuntu
+
+Voir le status:
+	'sudo ufw status verbose'
