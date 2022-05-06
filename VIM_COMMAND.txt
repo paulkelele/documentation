@@ -11,7 +11,10 @@ Supprimer une ligne:
 	'dd' en se placant sur la ligne que l'on veut supprimer
 
 Supprimer jusqu'a la fin de la ligne:
-	'd$' en se placant a l'endroit ou on veut couper
+	'd$' a partir du curseur
+
+Supprimer depuis le debut de la ligne
+	'd0' a partir du curseur
 
 Copier une ligne:
 	'yy' sur la ligne que l'on souhaite copiée.
