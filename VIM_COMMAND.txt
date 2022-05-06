@@ -1,0 +1,24 @@
+Aller en haut du fichier:
+	'gg' pour se placer en haut du fichier
+
+Aller tout en bas du fichier:
+	'G' pour aller à la derniere ligne
+
+Supprimer un mot:
+	'dw' en se placant sur le mot que l'on souhaite supprimer
+
+Supprimer une ligne:
+	'dd' en se placant sur la ligne que l'on veut supprimer
+
+Copier une ligne:
+	'yy' sur la ligne que l'on souhaite copiée.
+
+Coller une ligne:
+	'p' insere la ligne copiée sous la ligne ou est placé le curseur 
+
+Effacer tout un fichier: 
+	'gg' pour se placer au debut du fichier
+	'dG' pour effacer tout le fichier.
+
+Savoir dans quel fichier nous sommes:
+	':f' pour affichier le nom du fichier ouvert

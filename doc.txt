@@ -1,0 +1,12 @@
+Reference web:
+https://www.simplified.guide/ssh/copy-file
+
+CLIENT EN LOCAL VERS LE SERVEUR
+on envoit le fichier toto.txt en local vers le serveur dans le repertoire /home/stef
+scp toto.txt stef@192.168.1.70:/home/stef/ 
+
+DEPUIS LE SERVEUR VERS LE CLIENT EN LOCAL
+on transfert le fichier titi.txt depuis le serveur dans le repertoire /home/stef en local
+scp stef@192.168.1.70:/home/stef/titi.txt titi.txt
+
+
