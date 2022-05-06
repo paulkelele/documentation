@@ -1,3 +1,5 @@
+Reference: https://www.cs.colostate.edu/helpdocs/vi.html
+
 Inserer text niveau du curseur:
 	'i'
 
