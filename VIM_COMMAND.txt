@@ -1,5 +1,7 @@
 Reference: https://www.cs.colostate.edu/helpdocs/vi.html
 
+Commandes basiques pour Vim editeur
+
 Inserer text niveau du curseur:
 	'i'
 
