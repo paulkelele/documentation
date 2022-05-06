@@ -45,6 +45,12 @@ Reculer par mot:
 Avancer par mot:
 	'w'
 
+Copier un mot peut importe emplacement curseur sur le mot:
+	'yaw'
+
+Copier un mot a partir de l'emplacement du curseur:
+	'yw'
+
 Copier une ligne:
 	'yy' sur la ligne que l'on souhaite copiée.
 
@@ -58,4 +64,6 @@ Effacer tout un fichier:
 Savoir dans quel fichier nous sommes:
 	':f' pour affichier le nom du fichier ouvert
 
+Ecrire dans un nouveau fichier a partir des lignes selectionnees:
+	'12,35w nouveaufichier <ENTER>'
 
