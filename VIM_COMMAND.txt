@@ -10,6 +10,9 @@ Supprimer un mot:
 Supprimer une ligne:
 	'dd' en se placant sur la ligne que l'on veut supprimer
 
+Supprimer jusqu'a la fin de la ligne:
+	'd$' en se placant a l'endroit ou on veut couper
+
 Copier une ligne:
 	'yy' sur la ligne que l'on souhaite copiée.
 
