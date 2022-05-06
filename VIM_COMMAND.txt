@@ -57,3 +57,5 @@ Effacer tout un fichier:
 
 Savoir dans quel fichier nous sommes:
 	':f' pour affichier le nom du fichier ouvert
+
+
