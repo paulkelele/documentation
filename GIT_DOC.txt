@@ -9,7 +9,7 @@ Modifier le dernier message de commit si commit DEJA pusher sur Remote
 
 Supprimer le dernier commit
 	git reset --hard HEAD^
-	/** Si on a déja pousser sur le serveur pour ecraser les modifs
+	/** Si on a déja pousser sur le serveur pour ecraser les modifs deja faites sur le serveur **/
 	git push --force
 
 	
