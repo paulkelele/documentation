@@ -6,6 +6,12 @@ Modifier le dernier message de commit si commit DEJA pusher sur Remote
 	git commit --amend 
 	git commit --amend -m "Nouveau message"
 	git push --force <remoteName> <branchName>
+
+Supprimer le dernier commit
+	git reset --hard HEAD^
+	/** Si on a déja pousser sur le serveur pour ecraser les modifs
+	git push --force
+
 	
 
 
