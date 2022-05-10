@@ -1,1 +1,10 @@
-Fichier de documentation Apache2 Ubintu
+Fichier de documentation Apache2 Ubuntu
+
+enable un site:
+	sudo a2ensite <NOM_DU_SITE>
+	sudo service apache2 restart 
+
+
+disable un site:
+	sudo a2dissite <NOM_DU_SITE>
+	sudo service apache2 restart 
