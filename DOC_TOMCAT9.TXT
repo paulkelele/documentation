@@ -1,1 +1,11 @@
-nstallation TOMCAT9 sous ubuntu avec eclipse
+Installation TOMCAT9 sous ubuntu avec eclipse
+
+cd /usr/share/tomcat9
+sudo ln -s /var/lib/tomcat9/conf conf
+sudo ln -s /var/log/tomcat9 log
+sudo ln -s /etc/tomcat9/policy.d/03catalina.policy conf/catalina.policy
+sudo chmod -R a+rwx /usr/share/tomcat7/conf
+
+Dans eclipse =>
+	Dans le propriétés du serveur tomcat redefinir "Tomcat admin port" avec un port différent de celui de "HTTP/1.1"..Ne pas laisser "-" en param
+	ex: 9001 pour "Tomcat admin port" et 8081 pour "HTTP/1.1" 
