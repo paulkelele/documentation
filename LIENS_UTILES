@@ -3,3 +3,7 @@ https://www.youtube.com/watch?v=0FpLve7ffoY&list=PLfu_Bpi_zcDOn8ajnuLY6g1C6hc_ee
 
 lien explication PKCS11
 https://javasearch.developpez.com/sun/j2se/1.6.0/technotes/guides/security/p11guide.html
+
+
+lien SOF stackoverflow pour charger les modules pkcs11
+https://stackoverflow.com/questions/61149455/access-sun-security-x509-in-jdk-11-without-modules
