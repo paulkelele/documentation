@@ -1,0 +1,16 @@
+Le context:
+	Depuis jdk9 un systeme de modules est mis en place. IL s'agit s'un system de distribution de code et de ressources et un référentiel de stockage et collection. voir JPMS sur Wikipedia pour les détails.
+
+**Pour utiliser les modules systems il faut les déclarer.
+
+** Pour javac et Intellij cela ne pose pas de soucis. Il suffit de déclarer des options à la compilation. ex:
+	
+	--add-exports jdk.crypto.cryptoki/sun.security.pkcs11=ALL-UNNAMED --add-exports jdk.crypto.cryptoki/sun.security.pkcs11.wrapper=ALL-UNNAMED
+	 
+	Avec cet ajout d'export nous pouvons utiliser l'API cryptoki. De base, le package sun.security est utilisé en interne par le jdk donc non accessible.
+
+** Sous eclipse cela ne fonctionne pas de la même manière car Eclipse utilise un compilateur intégré.
+	Donc pour utiliser l'API cryptoki sous eclipse a la compilation, il faut aller dans les propriétés du projet -> java compiler -> Compiler compliance level -> 1.8
+
+ATTENTION: A l'execution il faudra déclarer à la JVM les --add-exports. 
+
