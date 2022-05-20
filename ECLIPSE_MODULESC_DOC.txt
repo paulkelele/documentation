@@ -14,3 +14,4 @@ Le context:
 
 ATTENTION: A l'execution il faudra déclarer à la JVM les --add-exports. 
 
+INFO SOF: https://stackoverflow.com/questions/55571046/eclipse-is-confused-by-imports-accessible-from-more-than-one-module 
