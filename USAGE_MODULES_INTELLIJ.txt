@@ -1,0 +1,24 @@
+/** A LA COMPILATION: avec les --add-exports*/
+-> (Dans la fenetre principale) -> File -> Settings -> Build, Execution, Deployment -> Compiler -> Java Compiler
+-> Override compiler parameters -> per-module -> dans "Module": le nom du projet et dans "Compilation options" les
+--add-exports [ex: --add-exports java.base/sun.security.x509=ALL-UNNAMED]
+
+
+/** Pour créer le jar sous Intellij */
+-> Build -> Build Artifacts...Build Artifact -> Action -> Build (ou autre chose)
+
+
+/** A L'EXECUTION:  pour lancer execution du jar avec tous les modules + debug certpath et ocsp*/
+/IdeaProjects/ideFirstProject/out/artifacts/ideFirstProject_jar$
+ java --add-modules jdk.crypto.cryptoki --add-exports java.rmi/sun.rmi.transport=ALL-UNNAMED
+ --add-exports java.rmi/sun.rmi.server=ALL-UNNAMED
+ --add-exports java.base/sun.security.validator=ALL-UNNAMED
+ --add-exports java.base/sun.security.x509=ALL-UNNAMED
+ --add-exports java.base/sun.security.util=ALL-UNNAMED
+ --add-exports jdk.crypto.cryptoki/sun.security.pkcs11.wrapper=ALL-UNNAMED
+ --add-exports java.desktop/sun.swing=ALL-UNNAMED
+ --add-exports java.base/sun.security.provider.certpath=ALL-UNNAMED
+ --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+ --add-exports java.base/sun.util.calendar=ALL-UNNAMED
+ -Djava.security.debug=certpath,ocsp
+ -jar ideFirstProject.jar
