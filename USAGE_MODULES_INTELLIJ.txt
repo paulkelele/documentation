@@ -7,8 +7,12 @@
 /** Pour créer le jar sous Intellij */
 -> Build -> Build Artifacts...Build Artifact -> Action -> Build (ou autre chose)
 
+/** A l'EXECUTION DANS INTELLIJ pour ajouter les --add-exports et plus généralement des paramètres à la VM pour exécuter dans INTELLIJ  */
+-> click droit dans la classe Main -> Modify run configuration... -> modify options (En haut à droite) -> Java -> Add VM options
+un champ de type input apparait dans la fenêtre précédente et on peut renseigner les paramètres pour la VM. 
 
-/** A L'EXECUTION:  pour lancer execution du jar avec tous les modules + debug certpath et ocsp*/
+
+/** A L'EXECUTION DU JAR:  pour lancer execution du jar avec tous les modules + debug certpath et ocsp*/
 /IdeaProjects/ideFirstProject/out/artifacts/ideFirstProject_jar$
  java --add-modules jdk.crypto.cryptoki --add-exports java.rmi/sun.rmi.transport=ALL-UNNAMED
  --add-exports java.rmi/sun.rmi.server=ALL-UNNAMED
