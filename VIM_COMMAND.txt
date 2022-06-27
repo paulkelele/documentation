@@ -32,6 +32,10 @@ Supprimer un mot:
 Supprimer une ligne:
 	'dd' en se placant sur la ligne que l'on veut supprimer
 
+Supprimer plusieurs lignes:
+	'5dd' se placer sur la 1ere ligne à supprimer et supprime les 4 autres lignes suivante;
+	':45,60d' supprime les lignes dans l'intervalle lignes [45,60] 
+
 Supprimer jusqu'a la fin de la ligne:
 	'd$' a partir du curseur
 
