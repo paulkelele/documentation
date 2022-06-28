@@ -1,10 +1,5 @@
-/** A LA COMPILATION: avec les --add-exports*/
--> (Dans la fenetre principale) -> File -> Settings -> Build, Execution, Deployment -> Compiler -> Java Compiler
--> Override compiler parameters -> per-module -> dans "Module": le nom du projet et dans "Compilation options" les
---add-exports [ex: --add-exports java.base/sun.security.x509=ALL-UNNAMED]
 
-
-/** Pour créer le jar sous Intellij */
+/** CREER UN JAR  sous Intellij */
 	1/ Création d'un  Artifact pour le build:
   	-> File -> ProjectStructure.. -> cliquez sur '+' en haut à gauche du panneau du milieu -> JAR -> From modules with dependencies....
 	-> Vérifier le nom du module, choisir  le nom de la class Main pour un jar executable et l'emplacement du fichier MANIFEST.MF (par defautt il trouve les bons params)
@@ -13,6 +8,22 @@
 	  
 	2/ Execution du build:
 	-> Build -> Build Artifacts...Build Artifact -> Action -> Build (ou autre chose)
+
+/** AJOUTER ET ENLEVER DES LIBS DU BUILD PATH
+	Ajouter des librairies au build path:
+		Méthode rapide: -> créer un répertoire à la racine du projer avec les jars -> selectionner le/les jars -> click droit -> Add as library
+		Méthode par menu: -> File -> Project Stucture... -> Libraries -> Cliquez sur '+' en haut à gauche du panneau du milieu -> Java -> Choisir le ou les jar à ajouter.
+	Enlever des librairie au build path:
+		Méthode par menu: -> File -> Project Stucture... -> Libraries -> Selectionner le/les jars à supprimer -> click  bouton droit -> supprimer
+	
+	Astuce: Pour voir si un jar est bien ajouter au build path, un chevron apparait devant le jar pour le parcourir.
+
+
+/** A LA COMPILATION: avec les --add-exports*/
+-> (Dans la fenetre principale) -> File -> Settings -> Build, Execution, Deployment -> Compiler -> Java Compiler
+-> Override compiler parameters -> per-module -> dans "Module": le nom du projet et dans "Compilation options" les
+--add-exports [ex: --add-exports java.base/sun.security.x509=ALL-UNNAMED]
+
 
 
 /** A l'EXECUTION DANS INTELLIJ pour ajouter les --add-exports et plus généralement des paramètres à la VM pour exécuter dans INTELLIJ  */
