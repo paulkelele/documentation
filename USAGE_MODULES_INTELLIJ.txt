@@ -5,7 +5,15 @@
 
 
 /** Pour créer le jar sous Intellij */
--> Build -> Build Artifacts...Build Artifact -> Action -> Build (ou autre chose)
+	1/ Création d'un  Artifact pour le build:
+  	-> File -> ProjectStructure.. -> cliquez sur '+' en haut à gauche du panneau du milieu -> JAR -> From modules with dependencies....
+	-> Vérifier le nom du module, choisir  le nom de la class Main pour un jar executable et l'emplacement du fichier MANIFEST.MF (par defautt il trouve les bons params)
+	-> Choisir d'autes options si nécéssaire -> Ok pour enregistrer.
+	On peut créer ainsi plusieurs Artifacts selon les configurations necessaire.
+	  
+	2/ Execution du build:
+	-> Build -> Build Artifacts...Build Artifact -> Action -> Build (ou autre chose)
+
 
 /** A l'EXECUTION DANS INTELLIJ pour ajouter les --add-exports et plus généralement des paramètres à la VM pour exécuter dans INTELLIJ  */
 -> click droit dans la classe Main -> Modify run configuration... -> modify options (En haut à droite) -> Java -> Add VM options
